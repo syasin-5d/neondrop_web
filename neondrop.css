@@ -1,13 +1,9 @@
 @charset "UTF-8";
-body {
-    background-image: url('neondrop.png');
-    background-attachment: fixed;
-    background-size: 100% 100%;
-}
 
-#wrap {
+div#wrap {
     width: 780px;
     margin: 0 auto;
+    position: relative;
 }
 
 header {
@@ -18,9 +14,14 @@ header {
     text-align: center;
 }
 
-canvas {
+canvas#canvas {
     background-color: white;
     border: 1px solid black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 div#main {

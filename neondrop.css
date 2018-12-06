@@ -1,6 +1,13 @@
 @charset "UTF-8";
 body {
-    background-color: #00FFFF;
+    background-image: url('neondrop.png');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#wrap {
+    width: 780px;
+    margin: 0 auto;
 }
 
 header {
@@ -9,7 +16,6 @@ header {
     height : 80px;
     margin-bottom : 60px;
     text-align: center;
-    font-size: 3em;
 }
 
 canvas {
@@ -17,3 +23,7 @@ canvas {
     border: 1px solid black;
 }
 
+div#main {
+    background-color: white;
+    height : 600px;
+}

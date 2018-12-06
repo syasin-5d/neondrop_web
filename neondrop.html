@@ -1,16 +1,27 @@
 <!doctype html>
 <html lang="ja-JP">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Document</title>
-        <script type="application/javascript" src="neondrop.js"></script>
-        <link href="neondrop.css" rel="stylesheet"/>
-    </head>
-    <body onload="draw();">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script type="application/javascript" src="neondrop.js"></script>
+    <link href="neondrop.css" rel="stylesheet" />
+</head>
+
+<body onload="draw();">
+    <div id="wrap">
         <header>
-            NeonDrop っぽいサイト、作ってみたっす！
+            <h1>NeonDrop っぽいサイト、作ってみたっす！</h1>
         </header>
-        <canvas id="canvas" width="480" height="320">
-        </canvas>
-    </body>
+        <div id="main">
+            <p>
+                NeonDropの三角形を背景にしたかったっすが、まだやり方が分かってないっす<br/>
+                下のはcanvasで三角形をたくさん生成してみたやつっす
+            </p>
+            <canvas id="canvas" width="540" height="400">
+            </canvas>
+        </div>
+
+    </div>
+</body>
 </html>

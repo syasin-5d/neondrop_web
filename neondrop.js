@@ -10,6 +10,9 @@ const pink = "#CC00FF";
 function draw(){
     var canvas = document.getElementById("canvas");
     if(canvas.getContext){
+        canvas.width  = window.innerWidth;
+        canvas.height = window.innerHeight;
+
         var ctx = canvas.getContext("2d");
 
         var colors = [yellow, blue, cyan, pink];
@@ -24,6 +27,10 @@ function draw(){
             drawTriangle({ctx:ctx, x:x, y:y, rotate:rotate, color:color});
         }
 
+        window.onresize = () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            draw();
+        };
     }
 }
 
